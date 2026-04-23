@@ -1,12 +1,104 @@
 #NUMBER 1
+print("Akeisha Naomi Jen M. Taniegra")
+print("Zagadztaz St.")
+print("Paranaque City, Metro Manila, 1700")
+print("Philippines")
+
 #NUMBER 2
+name = input("Enter your name: ")
+print("Processing…")
+print("Hello")
+print(name)
+print("Welcome")
+print("Nice to meet you")
+print("Done")
+
 #NUMBER 3
+width = float(input("Enter width(meters): "))
+length = float(input("Enter length (meters): "))
+area = width * length
+print("Width:", width)
+print("Length:", length)
+print("Area is:")
+print(area)
+print("square meters")
+print("Done")
+
 #NUMBER 4
+length = float(input("Enter length (feet): "))
+width = float(input("Enter width (feet): "))
+area_sqft = length * width
+acres = area_sqft / 435650
+print("Length:", length)
+print("Width:", width)
+print("Area in square feet:")
+print(area_sqft)
+print("Converted to acres:")
+print(acres)
+print("Done")
+
 #NUMBER 5
+small = int(input("Enter a number of small containers: "))
+large = int(input("Enter a number of large containers: "))
+small_refund = small * 0.10 
+large_refund = large * 0.25
+total = small_refund + large_refund
+print("Small refund:", small_refund)
+print("Large refund:", large_refund)
+print ("Total refund:")
+print(f"${total:.2f}")
+print("Thank you")
+print("Done")
+
 #NUMBER 6
+meal = float(input("Enter meal cost: "))
+tax = meal * 0.12
+tip = meal * 0.18
+total = meal + tax + tip
+print("Meal:", meal)
+print("Tax amount:")
+print(f"Tax: {tax: .2f}")
+print("Tip amount:")
+print(f"Tip: {tip:.2f}")
+print("Total cost:")
+print(f"Total: {total:.2f}")
+print("Done")
+
 #NUMBER 7
+n = int(input("Enter a positive integer: "))
+sum = n * (n + 1) // 2
+print("n:", n)
+print("Sum:", sum)
+print("Computation done")
+print("Thanks!")
+
 #NUMBER 8
+widgets = int(input("Enter widgets: "))
+gizmos = int(input("Enter gizmos: "))
+widget_weight = widgets * 75
+gizmo_weight = gizmos * 112
+total = widget_weight + gizmo_weight
+print("Widget weight:", widget_weight)
+print("Gizmo weight:", gizmo_weight)
+print("Total weight:", total ,"grams")
+print("Thank you!!")
+print("Done")
+
 #NUMBER 9
+amount = float(input("Enter initial deposit: "))
+year1 = amount * 1.04
+year2 = year1 * 1.04
+year3 = year2 * 1.04
+print("Initial amount:", amount)
+print("After 1 year:")
+print(f"{year1:.2f}")
+print("After 2 years")
+print(f"{year2:.2f}")
+print("After 3 years")
+print(f"{year3:.2f}")
+print("Interest rate: 4%")
+print("Done")
+
 #NUMBER 10
 #NUMBER 11
 #NUMBER 12
