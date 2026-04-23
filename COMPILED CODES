@@ -108,14 +108,66 @@ print("Done")
 #NUMBER 16
 #NUMBER 17
 #NUMBER 18
-#NUMBER 19
-#NUMBER 20
-#NUMBER 21
-#NUMBER 22
-#NUMBER 23
-#NUMBER 24
-#NUMBER 25
+rad = float(input("Enter the radius of the circle: "))
 
+height = float(input("Enter the height of the cylinder: "))
+
+pi = 3.14
+
+v = pi * rad**2 * height
+
+print(f"The volume of the cylinder is: {v} ")
+
+#NUMBER 19
+h = float(input("Enter the height from which the object is dropped (in meters): "))
+g = 9.81    
+v1 = 0
+vF = (2 * g * h)**0.5
+print(f"The final velocity of the object is: {vF} m/s")
+
+#NUMBER 20
+p = float(input("Enter the pressure in Pa: "))
+V = float(input("Enter the volume in liters: "))
+T = float(input("Enter the temperature in Kelvin: "))
+R = 8.314 
+Moles = (p * V) / (R * T)
+print(f"The number of moles is: {Moles} ")
+ 
+#NUMBER 21
+base = float(input("Enter the base of the triangle: "))
+height = float(input("Enter the height of the triangle: "))
+area = 0.5 * base * height
+print(f"The area of the triangle is: {area} ")
+
+#NUMBER 22
+side1 = input("Enter the length of the first side: ")
+side2 = input("Enter the length of the second side: ")  
+side3 = input("Enter the length of the third side: ")
+s = (float(side1) + float(side2) + float(side3)) / 2
+print("The area of the triangle is: ", (s * (s - float(side1)) * (s - float(side2)) * (s - float(side3))) ** 0.5)
+
+#NUMBER 23
+s = input("length of a side: ")
+n = input("number of sides: ")
+area =(float(n) * (float(s) ** 2)) / (4 * (3.14159 / float(n)) ** 0.5)
+print("The area of the regular polygon is: ", area)
+#NUMBER 24
+days = input("Enter the number of days: ")
+hours = input("Enter the number of hours: ")
+minutes = input("Enter the number of minutes: ")
+seconds = input("Enter the number of seconds: ")
+total_seconds = (float(days) * 24 * 3600) + (float(hours) * 3600) + (float(minutes) * 60) + float(seconds)
+print("The total number of seconds is: ", total_seconds)
+
+#NUMBER 25
+t = int(input("Seconds: "))
+
+d = t // 86400
+h = (t % 86400) // 3600
+m = (t % 3600) // 60
+s = t % 60
+
+print(f"{d}:{h:02}:{m:02}:{s:02}")
 #NUMBER 26
 from datetime import datetime
 today = datetime.now()
