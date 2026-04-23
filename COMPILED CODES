@@ -28,7 +28,7 @@ print("Done")
 length = float(input("Enter length (feet): "))
 width = float(input("Enter width (feet): "))
 area_sqft = length * width
-acres = area_sqft / 435650
+acres = area_sqft / 43560
 print("Length:", length)
 print("Width:", width)
 print("Area in square feet:")
@@ -115,11 +115,73 @@ print("Done")
 #NUMBER 23
 #NUMBER 24
 #NUMBER 25
+
 #NUMBER 26
+from datetime import datetime
+today = datetime.now()
+print(f"Year: {today:%Y}")
+print(f"Month: {today:%B}")
+print(f"Day: {today:%d}")
+print(f"Full Date: {today:%Y-%B-%d}")
+print(f"Current time is {today:%H:%M:%S %p}")
+
 #NUMBER 27
+Height = float (input("Enter Your Height (m):  "))
+Weight = float (input("Enter Your Weight (kg):  "))
+BMI =  Weight / (Height * Height) 
+print(f"Your BMI is: {BMI:.2f}")
+
 #NUMBER 28
+air_temperature = float(input("Enter the air temperature in degrees Celsius: "))
+wind_speed = float(input("Enter the wind speed in kilometers per hour: "))
+if air_temperature <= 10 and wind_speed > 4.8:
+    wci = 13.12 + 0.6215 * air_temperature - 11.37 * (wind_speed ** 0.16) + 0.3965 * air_temperature * (wind_speed ** 0.16)
+    print(f"The wind chill index is: {round(wci)}")
+else:
+    print("Wind chill index is only valid for temperatures <= 10 degrees Celsius and wind speeds > 4.8 km/h")
+
 #NUMBER 29
+celcius_degree = float(input("Enter the temperature in degrees Celsius: "))
+fahrenheit_degree = (celcius_degree * 9/5) + 32
+kelvin_degree = celcius_degree + 273.15
+print(f"The temperature in degrees Fahrenheit is: {fahrenheit_degree:.2f}")
+print(f"The temperature in degrees Kelvin is: {kelvin_degree:.2f}")
+
 #NUMBER 30
+kilo_pascals = float(input("Enter the pressure in Kilo Pascals: "))
+punds_per_square_inch = kilo_pascals * 0.1450377377
+milliliters_of_mercury = kilo_pascals * 7.500615613
+atmospheres = kilo_pascals * 0.00986923267
+print(f"The pressure in pounds per square inch is: {punds_per_square_inch:.2f}")
+print(f"The pressure in milliliters of mercury is: {mililiters_of_mercury:.2f}")
+print(f"The pressure in atmospheres is: {atmospheres:.2f}")
+
 #NUMBER 31
+number = input("Enter 4 interger numbers: ")
+digits = [int(d) for d in number]
+digit_sum = sum(digits)
+display_str = " + ".join(number)
+print(f"{display_str} = {digit_sum}")
+
 #NUMBER 32
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+minimum = min(num1, num2, num3)
+maximum = max(num1, num2, num3)
+middle = num1 + num2 + num3 - minimum - maximum
+print(f"Minimum: {minimum}")
+print(f"Middle: {middle}")
+print(f"Maximum: {maximum}")
+
 #NUMBER 33
+loaves = int(input("Enter the number of day old loaves being purchased: "))
+PRICE_PER_LOAF = 3.49
+DISCOUNT_PERCENT = 0.60
+12
+regular_price = loaves * PRICE_PER_LOAF
+discount = regular_price * DISCOUNT_PERCENT
+total_price = regular_price - discount
+print(f"Regular price:          ${regular_price:8.2f}")
+print(f"Discount (60%):        -${discount:8.2f}")
+print(f"Total price:            ${total_price:8.2f}")
