@@ -1,14 +1,20 @@
 #NUMBER 1
 print("Akeisha Naomi Jen M. Taniegra")
+
 print("Zagadztaz St.")
+
 print("Paranaque City, Metro Manila, 1700")
+
 print("Philippines")
 
 #NUMBER 2
 name = input("Enter your name: ")
+
 print("Processing…")
+
 print("Hello")
 print(name)
+
 print("Welcome")
 print("Nice to meet you")
 print("Done")
@@ -16,9 +22,12 @@ print("Done")
 #NUMBER 3
 width = float(input("Enter width(meters): "))
 length = float(input("Enter length (meters): "))
+
 area = width * length
+
 print("Width:", width)
 print("Length:", length)
+
 print("Area is:")
 print(area)
 print("square meters")
@@ -27,10 +36,13 @@ print("Done")
 #NUMBER 4
 length = float(input("Enter length (feet): "))
 width = float(input("Enter width (feet): "))
+
 area_sqft = length * width
 acres = area_sqft / 43560
+
 print("Length:", length)
 print("Width:", width)
+
 print("Area in square feet:")
 print(area_sqft)
 print("Converted to acres:")
@@ -40,9 +52,12 @@ print("Done")
 #NUMBER 5
 small = int(input("Enter a number of small containers: "))
 large = int(input("Enter a number of large containers: "))
+
 small_refund = small * 0.10 
 large_refund = large * 0.25
+
 total = small_refund + large_refund
+
 print("Small refund:", small_refund)
 print("Large refund:", large_refund)
 print ("Total refund:")
@@ -52,9 +67,12 @@ print("Done")
 
 #NUMBER 6
 meal = float(input("Enter meal cost: "))
+
 tax = meal * 0.12
 tip = meal * 0.18
+
 total = meal + tax + tip
+
 print("Meal:", meal)
 print("Tax amount:")
 print(f"Tax: {tax: .2f}")
@@ -86,9 +104,11 @@ print("Done")
 
 #NUMBER 9
 amount = float(input("Enter initial deposit: "))
+
 year1 = amount * 1.04
 year2 = year1 * 1.04
 year3 = year2 * 1.04
+
 print("Initial amount:", amount)
 print("After 1 year:")
 print(f"{year1:.2f}")
@@ -102,23 +122,29 @@ print("Done")
 #NUMBER 10
 a = int(input("Enter first integer (a): "))
 b = int(input("Enter second integer (b): "))
+
 print("Sum:", a + b)
 print("Difference:", a - b)
 print("Product:", a * b)
+
 if b != 0:
     print("Quotient:", a / b)
     print("Remainder:", a % b)
 else:
     print("Cannot divide by zero.")
+
 if a > 0:
     print("log10(a):", math.log10(a))
 else:
     print("log10 undefined for non-positive values.")
+
 print("a^b:", a ** b)
 
 #NUMBER 11
 mpg = float(input("Enter fuel efficiency in MPG: "))
+
 l_per_100km = 235.215 / mpg
+
 print("Fuel efficiency in L/100 km:", l_per_100km)
 
 #NUMBER 12
@@ -126,15 +152,18 @@ t1 = float(input("Enter latitude of point 1 (degrees): "))
 g1 = float(input("Enter longitude of point 1 (degrees): "))
 t2 = float(input("Enter latitude of point 2 (degrees): "))
 g2 = float(input("Enter longitude of point 2 (degrees): "))
+
 # Convert to radians
 t1 = math.radians(t1)
 g1 = math.radians(g1)
 t2 = math.radians(t2)
 g2 = math.radians(g2)
+
 distance = 6371.01 * math.acos(
     math.sin(t1) * math.sin(t2) +
     math.cos(t1) * math.cos(t2) * math.cos(g1 - g2)
 )
+
 print("Distance (km):", distance)
 
 #NUMBER 13
@@ -197,28 +226,40 @@ print("Volume of sphere:", volume)
 #NUMBER 17
 Original:
 mass = float(input("Enter the mass of water(g): "))
+
 dT = float(input("Enter the temperature change in C: "))
+
 specheat = 4.18
 HE = mass * specheat * dT
+
 print(f"The total energy required is {HE} Joules.")
+
 Extended:
 ms = float(input("Enter mass (g): "))
 dt = float(input("Enter temp change (C): "))
+
 sc = 4.18
 en = ms * sc * dt
+
 print(f"Energy: {en:.2f} Joules.")
+
 jpk = 3_600_000 
 cpk = 0.089 
+
 enk = en / jpk
 csd = enk * cpk
+
 print(f"Energy: {enk:.6f} kWh.")
 print(f"Cost: ${csd:.4f}.")
+
 print("\n Coffee example ")
 ems = 240
 edt = 80
+
 ee = ems * sc * edt
 eek = ee / jpk
 ecd = eek * cpk
+
 print(f"For {ems}g boiled by {edt}°C:")
 print(f"Energy: {ee:.2f} J")
 print(f"Energy: {eek:.6f} kWh")
@@ -226,9 +267,13 @@ print(f"Cost: ${ecd:.4f}")
 
 #NUMBER 18
 rad = float(input("Enter the radius of the circle: "))
+
 height = float(input("Enter the height of the cylinder: "))
+
 pi = 3.14
+
 v = pi * rad**2 * height
+
 print(f"The volume of the cylinder is: {v} ")
 
 #NUMBER 19
@@ -327,16 +372,21 @@ print(f"The pressure in atmospheres is: {atmospheres:.2f}")
 number = input("Enter 4 interger numbers: ")
 digits = [int(d) for d in number]
 digit_sum = sum(digits)
+
 display_str = " + ".join(number)
+
 print(f"{display_str} = {digit_sum}")
 
 #NUMBER 32
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 num3 = int(input("Enter the third number: "))
+
 minimum = min(num1, num2, num3)
 maximum = max(num1, num2, num3)
+
 middle = num1 + num2 + num3 - minimum - maximum
+
 print(f"Minimum: {minimum}")
 print(f"Middle: {middle}")
 print(f"Maximum: {maximum}")
@@ -349,6 +399,7 @@ DISCOUNT_PERCENT = 0.60
 regular_price = loaves * PRICE_PER_LOAF
 discount = regular_price * DISCOUNT_PERCENT
 total_price = regular_price - discount
+
 print(f"Regular price:          ${regular_price:8.2f}")
 print(f"Discount (60%):        -${discount:8.2f}")
 print(f"Total price:            ${total_price:8.2f}")
