@@ -106,15 +106,95 @@ print("Done")
 #NUMBER 14
 #NUMBER 15
 #NUMBER 16
+
 #NUMBER 17
+Original:
+mass = float(input("Enter the mass of water(g): "))
+dT = float(input("Enter the temperature change in C: "))
+specheat = 4.18
+HE = mass * specheat * dT
+print(f"The total energy required is {HE} Joules.")
+Extended:
+ms = float(input("Enter mass (g): "))
+dt = float(input("Enter temp change (C): "))
+sc = 4.18
+en = ms * sc * dt
+print(f"Energy: {en:.2f} Joules.")
+jpk = 3_600_000 
+cpk = 0.089 
+enk = en / jpk
+csd = enk * cpk
+print(f"Energy: {enk:.6f} kWh.")
+print(f"Cost: ${csd:.4f}.")
+print("\n Coffee example ")
+ems = 240
+edt = 80
+ee = ems * sc * edt
+eek = ee / jpk
+ecd = eek * cpk
+print(f"For {ems}g boiled by {edt}°C:")
+print(f"Energy: {ee:.2f} J")
+print(f"Energy: {eek:.6f} kWh")
+print(f"Cost: ${ecd:.4f}")
+
 #NUMBER 18
+rad = float(input("Enter the radius of the circle: "))
+height = float(input("Enter the height of the cylinder: "))
+pi = 3.14
+v = pi * rad**2 * height
+print(f"The volume of the cylinder is: {v} ")
+
 #NUMBER 19
+h = float(input("Enter the height from which the object is dropped (in meters): "))
+g = 9.81    
+v1 = 0
+vF = (2 * g * h)**0.5
+print(f"The final velocity of the object is: {vF} m/s")
+
 #NUMBER 20
+p = float(input("Enter the pressure in Pa: "))
+V = float(input("Enter the volume in liters: "))
+T = float(input("Enter the temperature in Kelvin: "))
+R = 8.314 
+Moles = (p * V) / (R * T)
+print(f"The number of moles is: {Moles} ")
+ 
 #NUMBER 21
+base = float(input("Enter the base of the triangle: "))
+height = float(input("Enter the height of the triangle: "))
+area = 0.5 * base * height
+print(f"The area of the triangle is: {area} ")
+
 #NUMBER 22
+side1 = input("Enter the length of the first side: ")
+side2 = input("Enter the length of the second side: ")  
+side3 = input("Enter the length of the third side: ")
+s = (float(side1) + float(side2) + float(side3)) / 2
+print("The area of the triangle is: ", (s * (s - float(side1)) * (s - float(side2)) * (s - float(side3))) ** 0.5)
+
 #NUMBER 23
+import math 
+s = float(input("Enter the length of a side: ")) 
+n = int(input("Enter the number of sides: "))   
+area = (n * (s ** 2)) / (4 * math.tan(math.pi / n))
+print("The area of the regular polygon is:", area)
+
 #NUMBER 24
+Source Code:
+days = input("Enter the number of days: ")
+hours = input("Enter the number of hours: ")
+minutes = input("Enter the number of minutes: ")
+seconds = input("Enter the number of seconds: ")
+total_seconds = (float(days) * 24 * 3600) + (float(hours) * 3600) + (float(minutes) * 60) + float(seconds)
+print("The total number of seconds is: ", total_seconds)
+
 #NUMBER 25
+t = int(input("Seconds: "))
+d = t // 86400
+h = (t % 86400) // 3600
+m = (t % 3600) // 60
+s = t % 60
+print(f"{d}:{h:02}:{m:02}:{s:02}")
 
 #NUMBER 26
 from datetime import datetime
