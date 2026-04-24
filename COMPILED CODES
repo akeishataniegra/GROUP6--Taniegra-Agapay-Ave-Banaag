@@ -100,12 +100,99 @@ print("Interest rate: 4%")
 print("Done")
 
 #NUMBER 10
+a = int(input("Enter first integer (a): "))
+b = int(input("Enter second integer (b): "))
+print("Sum:", a + b)
+print("Difference:", a - b)
+print("Product:", a * b)
+if b != 0:
+    print("Quotient:", a / b)
+    print("Remainder:", a % b)
+else:
+    print("Cannot divide by zero.")
+if a > 0:
+    print("log10(a):", math.log10(a))
+else:
+    print("log10 undefined for non-positive values.")
+print("a^b:", a ** b)
+
 #NUMBER 11
+mpg = float(input("Enter fuel efficiency in MPG: "))
+l_per_100km = 235.215 / mpg
+print("Fuel efficiency in L/100 km:", l_per_100km)
+
 #NUMBER 12
+t1 = float(input("Enter latitude of point 1 (degrees): "))
+g1 = float(input("Enter longitude of point 1 (degrees): "))
+t2 = float(input("Enter latitude of point 2 (degrees): "))
+g2 = float(input("Enter longitude of point 2 (degrees): "))
+# Convert to radians
+t1 = math.radians(t1)
+g1 = math.radians(g1)
+t2 = math.radians(t2)
+g2 = math.radians(g2)
+distance = 6371.01 * math.acos(
+    math.sin(t1) * math.sin(t2) +
+    math.cos(t1) * math.cos(t2) * math.cos(g1 - g2)
+)
+print("Distance (km):", distance)
+
 #NUMBER 13
+cents = int(input("Enter amount in cents: "))
+
+toonies = cents // 200
+cents %= 200
+
+loonies = cents // 100
+cents %= 100
+
+quarters = cents // 25
+cents %= 25
+
+dimes = cents // 10
+cents %= 10
+
+nickels = cents // 5
+cents %= 5
+
+pennies = cents
+
+print("Toonies:", toonies)
+print("Loonies:", loonies)
+print("Quarters:", quarters)
+print("Dimes:", dimes)
+print("Nickels:", nickels)
+print("Pennies:", pennies)
+
 #NUMBER 14
+feet = float(input("Enter feet: "))
+inches = float(input("Enter inches: "))
+
+total_inches = feet * 12 + inches
+cm = total_inches * 2.54
+
+print("Height in centimeters:", cm)
+
 #NUMBER 15
+feet = float(input("Enter distance in feet: "))
+inches = feet * 12
+yards = feet / 3
+miles = feet / 5280
+
+print("Inches:", inches)
+print("Yards:", yards)
+print("Miles:", miles)
+
 #NUMBER 16
+import math
+
+r = float(input("Enter radius: "))
+
+area = math.pi * r**2
+volume = (4/3) * math.pi * r**3
+
+print("Area of circle:", area)
+print("Volume of sphere:", volume)
 
 #NUMBER 17
 Original:
